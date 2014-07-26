@@ -1,0 +1,35 @@
+/*
+ * HTML Model Constructor
+ * Author: https://github.com/ManuDavila
+ * Site: http://jquery-manual.blogspot.com
+ */
+
+body
+{
+    background: #521B50;
+    font-family: sans-serif, arial, verdana;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.container
+{
+    margin: 30px;
+}
+
+.title
+{
+    color: #F1D8F0;
+}
+
+#list li
+{
+list-style: square;
+}
+
+a 
+{
+    color: #FFFFFF;
+}
+
