@@ -97,6 +97,23 @@ class HTML {
              return "<source src='$src' type='$type'$slash>\n";
          }
     }
+	
+    public static function b($content=null, $attributes=null)
+    {
+         $attr = null;
+         if (is_array($attributes))
+         {
+             foreach($attributes as $key => $val)
+             {
+                 $attr .= " $key='$val'";
+             }
+             return "<b$attr>$content</b>\n";
+         }
+         else
+         {
+             return "<b>$content</b>\n";
+         }
+    }
     
     public static function blockquote($content=null, $attributes=null)
     {
@@ -202,6 +219,11 @@ class HTML {
     {
         return "</audio>\n";
     }
+	
+    public static function close_body()
+    {
+        return "</body>\n";
+    }
     
     public static function close_canvas()
     {
@@ -237,10 +259,20 @@ class HTML {
     {
         return "</form>\n";
     }
+	
+    public static function close_head()
+    {
+        return "</head>\n";
+    }
     
     public static function close_header()
     {
         return "</header>\n";
+    }
+	
+    public static function close_html()
+    {
+        return "</html>\n";
     }
     
     public static function close_main()
@@ -381,23 +413,6 @@ class HTML {
     public static function entities_decode($string=null)
     {
         return html_entity_decode($string);
-    }
-    
-    public static function error_for_input($id, $attributes=null)
-    {
-         $attr = null;
-         if (is_array($attributes))
-         {
-             foreach($attributes as $key => $val)
-             {
-                 $attr .= " $key='$val'";
-             }
-             return "<div id='$id'$attr></div>\n";
-         }   
-         else
-         {
-             return "<div id='$id'></div>\n";
-         }
     }
     
     public static function div($content=null, $attributes=null)
@@ -655,7 +670,7 @@ class HTML {
         }
     }
     
-        public static function italic($content=null, $attributes=null)
+        public static function i($content=null, $attributes=null)
     {
          $attr = null;
          if (is_array($attributes))
@@ -689,7 +704,7 @@ class HTML {
         }
     }
     
-    public static function link($href=null, $content=null, $attributes=null)
+    public static function a($href=null, $content=null, $attributes=null)
     {
         if (is_array($attributes))
         {
@@ -850,7 +865,24 @@ class HTML {
         {
              return "<audio controls>\n";   
         }
-    } 
+    }
+
+    public static function open_body($attributes=null)
+    {
+        $attr = null;
+        if (is_array($attributes))
+        {
+            foreach ($attributes as $key => $val)
+            {
+                $attr .= " $key='$val'";
+            }
+            return "<body$attr>\n";
+        }
+        else
+        {
+             return "<body>\n";   
+        }
+    }	
     
     public static function open_canvas($attributes=null)
     {
@@ -970,6 +1002,23 @@ class HTML {
              return "<form>\n";   
         }
     }
+	
+    public static function open_head($attributes=null)
+    {
+        $attr = null;
+        if (is_array($attributes))
+        {
+            foreach ($attributes as $key => $val)
+            {
+                $attr .= " $key='$val'";
+            }
+            return "<head$attr>\n";
+        }
+        else
+        {
+             return "<head>\n";   
+        }
+    }
     
     public static function open_header($attributes=null)
     {
@@ -985,6 +1034,23 @@ class HTML {
         else
         {
              return "<header>\n";   
+        }
+    }
+	
+    public static function open_html($attributes=null)
+    {
+        $attr = null;
+        if (is_array($attributes))
+        {
+            foreach ($attributes as $key => $val)
+            {
+                $attr .= " $key='$val'";
+            }
+            return "<html$attr>\n";
+        }
+        else
+        {
+             return "<html>\n";   
         }
     }
     

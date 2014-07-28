@@ -7,10 +7,11 @@
 require "ModelHtml/ModelHtml.php";
 
 echo HTML::add("<!DOCTYPE HTML>\n");
-echo HTML::add("<html>\n");
-echo HTML::add("<head>\n");
+echo HTML::open_html();
+echo HTML::open_head();
 /* Add slash alternative:
  echo HTML::meta("title", "HTML Model Constructor", "/");
+ RESULT: <meta name='title' content='HTML Model Constructor'/>
  */
 echo HTML::favicon("images/php.ico");
 echo HTML::charset("UTF-8");
@@ -31,14 +32,14 @@ echo HTML::open_style();
 //Your CSS code here
 echo HTML::close_style();
 
-echo HTML::add("</head>\n");
+echo HTML::close_head();
 
-echo HTML::add("<body>\n");
+echo HTML::open_body();
 
 echo HTML::open_header();
 echo HTML::open_div(array("class" => "container"));
 echo HTML::h1("HTML Model Constructor", array("class" => "title"));
-echo HTML::italic("This class lets you build HTML content.
+echo HTML::i("This class lets you build HTML content.
 Structure the website in a solid block correctly.
 Includes the latest HTML5 tags.
 Includes everything you need to build forms.");
@@ -60,10 +61,10 @@ echo HTML::close_main();
 echo HTML::open_footer();
 echo HTML::open_div(array("class" => "container"));
 echo HTML::open_center();
-echo HTML::small("Author: " . HTML::link("https://github.com/ManuDavila", "ManuDavila", array("target" => "_blank")));
+echo HTML::small("Author: " . HTML::a("https://github.com/ManuDavila", "ManuDavila", array("target" => "_blank")));
 echo HTML::close_center();
 echo HTML::close_div();
 echo HTML::close_footer();
 
-echo HTML::add("</body>\n");
-echo HTML::add("</html>\n");
+echo HTML::close_body();
+echo HTML::close_html();

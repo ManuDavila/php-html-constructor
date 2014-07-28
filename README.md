@@ -18,6 +18,7 @@ Includes everything you need to build forms.</i>
 <li>add_row</li>
 <li>addslashes</li>
 <li>add_video</li>
+<li>b</li>
 <li>blockquote</li>
 <li>br</li>
 <li>button</li>
@@ -28,6 +29,7 @@ Includes everything you need to build forms.</i>
 <li>close_article</li>
 <li>close_aside</li>
 <li>close_audio</li>
+<li>close_body</li>
 <li>close_canvas</li>
 <li>close_center</li>
 <li>close_details</li>
@@ -35,7 +37,9 @@ Includes everything you need to build forms.</i>
 <li>close_figure</li>
 <li>close_footer</li>
 <li>close_form</li>
+<li>close_head</li>
 <li>close_header</li>
+<li>close_html</li>
 <li>close_main</li>
 <li>close_nav</li>
 <li>close_section</li>
@@ -52,7 +56,6 @@ Includes everything you need to build forms.</i>
 <li>dialog</li>
 <li>entities</li>
 <li>entities_decode</li>
-<li>error_for_input</li>
 <li>div</li>
 <li>email</li>
 <li>favicon</li>
@@ -69,9 +72,9 @@ Includes everything you need to build forms.</i>
 <li>iframe</li>
 <li>image</li>
 <li>input</li>
-<li>italic</li>
+<li>i</li>
 <li>label</li>
-<li>link</li>
+<li>a</li>
 <li>link_style</li>
 <li>mark</li>
 <li>meta</li>
@@ -82,6 +85,7 @@ Includes everything you need to build forms.</i>
 <li>open_article</li>
 <li>open_aside</li>
 <li>open_audio</li>
+<li>open_body</li>
 <li>open_canvas</li>
 <li>open_center</li>
 <li>open_details</li>
@@ -89,7 +93,9 @@ Includes everything you need to build forms.</i>
 <li>open_figure</li>
 <li>open_footer</li>
 <li>open_form</li>
+<li>open_head</li>
 <li>open_header</li>
+<li>open_html</li>
 <li>open_main</li>
 <li>open_nav</li>
 <li>open_section</li>
