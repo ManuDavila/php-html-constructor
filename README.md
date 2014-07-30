@@ -1,10 +1,9 @@
 <header>
 <div class='container'>
 <h1 class='title'>HTML Model Constructor</h1>
-<i>This class lets you build HTML content.
-Structure the website in a solid block correctly.
-Includes the latest HTML5 tags.
-Includes everything you need to build forms.</i>
+<p>This class can generate HTML5 documents programmatically.
+It provides an extensive list static functions that can take a few parameters and generate HTML open and close tags including some that were introduced in HTML5.
+Currently it supports tags for document head and body, paragraphs and character formatting, links, forms, lists, embedding audio and video, JavaScript tags, etc..</p>
 </div>
 </header>
 <main>

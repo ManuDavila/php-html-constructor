@@ -39,10 +39,9 @@ echo HTML::open_body();
 echo HTML::open_header();
 echo HTML::open_div(array("class" => "container"));
 echo HTML::h1("HTML Model Constructor", array("class" => "title"));
-echo HTML::i("This class lets you build HTML content.
-Structure the website in a solid block correctly.
-Includes the latest HTML5 tags.
-Includes everything you need to build forms.");
+echo HTML::p("This class can generate HTML5 documents programmatically.
+It provides an extensive list static functions that can take a few parameters and generate HTML open and close tags including some that were introduced in HTML5.
+Currently it supports tags for document head and body, paragraphs and character formatting, links, forms, lists, embedding audio and video, JavaScript tags, etc..");
 echo HTML::close_div();
 echo HTML::close_header();
 
