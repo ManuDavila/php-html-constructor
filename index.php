@@ -18,7 +18,7 @@ echo HTML::charset("UTF-8");
 echo HTML::title("HTML Model Constructor");
 echo HTML::meta("viewport", "width=device-width");
 echo HTML::meta("title", "HTML Model Constructor");
-echo HTML::meta("description", "Build HTML elements with one PHP Model");
+echo HTML::meta("description", "This class can generate HTML5 documents programmatically.");
 echo HTML::meta("keywords", "html, html5, form, php, model, class");
 echo HTML::meta("robots", "All");
 echo HTML::script("http://code.jquery.com/jquery-1.11.1.min.js");
